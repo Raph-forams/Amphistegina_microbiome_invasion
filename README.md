@@ -10,7 +10,21 @@ Date: 11.12.2025
 
 ## OVERVIEW
 
-This repository contains the complete analysis workflow for characterizing microbiome composition of Amphistegina lobifera across an invasion gradient from the Red Sea to the Mediterranean Sea. The analysis includes:
+This repository contains the complete analysis workflow for characterizing microbiome composition of Amphistegina lobifera across an invasion gradient from the Red Sea to the Mediterranean Sea. 
+
+**SEQUENCE PRE-PROCESSING**
+
+Scripts numbered 01 - 04 detail the sequence processing of the prokaryotic amplicons:
+* [01a_dada2_ssu_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/01a_dada2_ssu_proks.R) and [01b_dada2_ssu_3rd_run_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/01b_dada2_ssu_3rd_run_proks.R): Dada2 workflow until after denoising and merging but prior to chimera remval for separate 16S sequencing batches.
+* [02_dada2_ssu_all_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/02_dada2_ssu_all_proks.R): Joint chimera removal and further processing.
+* [03_data_curation_all_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/03_data_curation_all_proks.R): 
+* [04_screen_nc_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/04_screen_nc_proks.R):
+
+Scripts numbered 05 - 08 detail the same analysis steps for the eukaryotic data set.
+
+**STATISTICAL DATA ANALYSIS:**
+
+The analysis is detailed in [09_Script_A_lobifera_invasion_final.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/09_Script_A_lobifera_invasion_final.R) and includes:
 
 1. Data quality control and filtering
 2. Technical replicate validation and merging
