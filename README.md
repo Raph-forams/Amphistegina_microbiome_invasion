@@ -14,11 +14,16 @@ This repository contains the complete analysis workflow for characterizing micro
 
 **SEQUENCE PRE-PROCESSING**
 
-Scripts numbered 01 - 04 detail the sequence processing of the prokaryotic amplicons:
-* [01a_dada2_ssu_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/01a_dada2_ssu_proks.R) and [01b_dada2_ssu_3rd_run_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/01b_dada2_ssu_3rd_run_proks.R): Dada2 workflow until after denoising and merging but prior to chimera remval for separate 16S sequencing batches.
-* [02_dada2_ssu_all_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/02_dada2_ssu_all_proks.R): Joint chimera removal and further processing.
-* [03_data_curation_all_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/03_data_curation_all_proks.R): 
-* [04_screen_nc_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/04_screen_nc_proks.R):
+Scripts numbered 00 document the demultiplexing of sequencing libraries and primer clipping steps prior to denoising in R:
+* [00a_seq_prep_ssu_proks.sh](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/00a_seq_prep_ssu_proks.sh): preparation of 16S sequences from single foraminifera for denoising
+* [00b_seq_prep_ssu_euks.sh](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/00b_seq_prep_ssu_euks.sh): preparation of 18S sequences from single foraminifera for denoising
+* [00c_seq_prep_ssu_3rd_run.sh](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/00c_seq_prep_ssu_3rd_run.sh): preparation of both 16S and 18S sequences from environmental samples as well as re-sequenced single forams
+
+Scripts numbered 01 - 04 detail the sequence processing of the prokaryotic amplicons with dada2 and subsequent curation steps:
+* [01a_dada2_ssu_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/01a_dada2_ssu_proks.R) and [01b_dada2_ssu_3rd_run_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/01b_dada2_ssu_3rd_run_proks.R): Dada2 workflow until after denoising and merging but prior to chimera removal for separate 16S sequencing batches
+* [02_dada2_ssu_all_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/02_dada2_ssu_all_proks.R): Joint chimera removal after combining the data from different sequencing batches and further processing
+* [03_data_curation_all_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/03_data_curation_all_proks.R): Assessment of bootstrap value distribution for the taxonomic assignment and rarefaction curves to evaluate sequencing depth
+* [04_screen_nc_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/04_screen_nc_proks.R): Assessment of negative controls
 
 Scripts numbered 05 - 08 detail the same analysis steps for the eukaryotic data set.
 
