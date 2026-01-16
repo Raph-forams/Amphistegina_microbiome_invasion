@@ -1,8 +1,8 @@
-## MICROBIOME ANALYSIS CODE
+## AMPHISTEGINA LOBIFERA MICROBIOME ANALYSIS CODE
 
 This README describes the R analysis code for the manuscript:
 
-[MANUSCRIPT TITLE]
+# *Multiple microbiome assembly strategies mediate invasion success in a marine protist*
 
 Author(s): Raphaël Morard, Christiane Hassenrück, Débora S. Raposo
 Contact: rmorard@marum.de
