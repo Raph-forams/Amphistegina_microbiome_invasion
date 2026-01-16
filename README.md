@@ -15,9 +15,9 @@ This repository contains the complete analysis workflow for characterizing micro
 **SEQUENCE PRE-PROCESSING**
 
 Scripts numbered 00 document the demultiplexing of sequencing libraries and primer clipping steps prior to denoising in R:
-* [00a_seq_prep_ssu_proks.sh](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/00a_seq_prep_ssu_proks.sh): preparation of 16S sequences from single foraminifera for denoising
-* [00b_seq_prep_ssu_euks.sh](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/00b_seq_prep_ssu_euks.sh): preparation of 18S sequences from single foraminifera for denoising
-* [00c_seq_prep_ssu_3rd_run.sh](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/00c_seq_prep_ssu_3rd_run.sh): preparation of both 16S and 18S sequences from environmental samples as well as re-sequenced single forams
+* [00a_seq_prep_ssu_proks.sh](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/00a_seq_prep_ssu_proks.sh): preparation of 16S sequences from single foraminifera for denoising (uses [Prokaryotes_single_forams_library_info.txt](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/Prokaryotes_single_forams_library_info.txt))
+* [00b_seq_prep_ssu_euks.sh](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/00b_seq_prep_ssu_euks.sh): preparation of 18S sequences from single foraminifera for denoising (uses [Eukaryotes_single_forams_library_info.txt](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/Eukaryotes_single_forams_library_info.txt))
+* [00c_seq_prep_ssu_3rd_run.sh](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/00c_seq_prep_ssu_3rd_run.sh): preparation of both 16S and 18S sequences from environmental samples as well as re-sequenced single forams (uses [Environmental_and_repeat_library_info.txt](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/Environmental_and_repeat_library_info.txt))
 
 Scripts numbered 01 - 04 detail the sequence processing of the prokaryotic amplicons with dada2 and subsequent curation steps:
 * [01a_dada2_ssu_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/01a_dada2_ssu_proks.R) and [01b_dada2_ssu_3rd_run_proks.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/01b_dada2_ssu_3rd_run_proks.R): Dada2 workflow until after denoising and merging but prior to chimera removal for separate 16S sequencing batches
