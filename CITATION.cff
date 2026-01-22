@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+authors:
+- family-names: "Morard"
+  given-names: "Raphael"
+  orcid: "https://orcid.org/0000-0002-1181-5358"
+- family-names: "Silva Raposo"
+  given-names: "Débora"
+  orcid: "https://orcid.org/0000-0001-9318-9129"
+- family-names: "Hassenrück"
+  given-names: "Christiane"
+  orcid: "https://orcid.org/0000-0003-1909-1726"
+title: "Microbiome analysis of the benthic foraminifera Amphistegina lobifera"
+version: 1.0.0
+date-released: 2026-01-22
+url: "https://github.com/Raph-forams/Amphistegina_microbiome_invasion/"
