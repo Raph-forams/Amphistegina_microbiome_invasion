@@ -29,7 +29,7 @@ Scripts numbered 05 - 08 detail the same analysis steps for the eukaryotic data 
 
 **STATISTICAL DATA ANALYSIS:**
 
-The analysis is detailed in [09_Script_A_lobifera_invasion_final.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/09_Script_A_lobifera_invasion_final.R) and includes:
+The analysis is detailed in [09_Script_A_lobifera_invasion_final.R](https://github.com/Raph-forams/Amphistegina_microbiome_invasion/blob/main/09_Script_A_lobifera_invasion_final.R), and was written with the help of the AI CLAUDE. It includes:
 
 1. Data quality control and filtering
 2. Technical replicate validation and merging
