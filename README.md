@@ -93,9 +93,7 @@ The analysis requires Supplementary Material files S1-S8 in the data/ directory:
 * All .tsv files: Tab-separated values with headers
 * All .txt files: Tab-separated values (FAPROTAX output format)
 
-These files are available from:
-* Zenodo: [DOI TO BE ASSIGNED]
-* GitHub: [REPOSITORY URL]
+These files are included in the release of this repository.
 
 ## DIRECTORY STRUCTURE
 
@@ -204,7 +202,7 @@ The script is organized into the following sections:
 
 ## OUTPUT FILES
 
-**FIGURES (PDF format, 300 dpi)**
+**FIGURES (PDF format)**
 Main Figures:
 * Figure_2/[multiple panels]: Overall community composition
 * Figure_3/[multiple panels]: Foraminiferal microbiome analysis
